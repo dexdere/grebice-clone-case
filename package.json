@@ -1,0 +1,19 @@
+{
+  "name": "grebice-clone-case",
+  "version": "1.0.0",
+  "description": "UI Clone Case",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dexdere/grebice-clone-case.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dexdere/grebice-clone-case/issues"
+  },
+  "homepage": "https://github.com/dexdere/grebice-clone-case#readme"
+}
