@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --mainColor: #0055a5;
   --secondColor: #fef229;
@@ -6,12 +10,9 @@
   --fontBold: 600;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 html {
-  font-size: 10px;
+  font-size: 14px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -154,19 +155,19 @@ header article {
   justify-content: space-between;
 }
 
-.leftDiv {
+.header-article .leftDiv {
   color: white;
   width: 50%;
 }
 
-.leftDiv h1 {
+.header-article .leftDiv h1 {
   font-size: 52px;
   font-weight: var(--fontBold);
   color: #2e2b2b;
   line-height: 73px;
 }
 
-.rightDiv {
+.header-article .rightDiv {
   color: #2e2b2b;
   width: 550px;
   height: 450px;
@@ -181,11 +182,11 @@ header article {
   border-radius: 1rem;
 }
 
-.rightDiv .calendar,
-.rightDiv .bedrooms,
-.rightDiv .receptions,
-.rightDiv .bathrooms,
-.rightDiv .bedrooms > div {
+.header-article .rightDiv .calendar,
+.header-article .rightDiv .bedrooms,
+.header-article .rightDiv .receptions,
+.header-article .rightDiv .bathrooms,
+.header-article .rightDiv .bedrooms > div {
   display: flex;
   flex-direction: column;
   justify-self: center;
@@ -193,26 +194,26 @@ header article {
   align-items: center;
 }
 
-.rightDiv p {
+.header-article .rightDiv p {
   font-size: 19px;
   font-weight: var(--fontRegular);
   margin-bottom: 0;
 }
 
-.rightDiv h1 {
+.header-article .rightDiv h1 {
   font-size: 28px;
   font-weight: var(--fontMedium);
   margin-top: 0;
 }
 
-.rightDiv .bedrooms > div {
+.header-article .rightDiv .bedrooms > div {
   background-color: var(--mainColor);
   height: 214px;
   width: 250px;
   border-radius: 0.4rem;
   color: white;
-  margin-right: -7rem;
-  margin-top: -7rem;
+  margin-right: -6rem;
+  margin-top: -6rem;
 }
 
 .see-details {
@@ -229,4 +230,165 @@ header article {
   font-size: 16px;
   font-weight: var(--fontRegular);
   text-decoration: none;
+  color: black;
+}
+
+/* Main */
+/* Article 1 */
+main {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  text-align: center;
+  margin: auto;
+}
+
+main section {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  text-align: center;
+  margin: auto;
+}
+
+#article-1 h2,
+#article-1 p {
+  font-size: 24px;
+  font-weight: var(--fontRegular);
+  color: #6c6c6c;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+#article-1 h1 {
+  font-size: 65px;
+  font-weight: var(--fontRegular);
+  color: #535353;
+  text-align: justify;
+  margin-top: 0;
+}
+
+.read-more-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid #707070;
+  height: 40px;
+  width: 140px;
+  background-color: white;
+  padding: 0 1em;
+  margin: auto;
+  cursor: pointer;
+  margin-bottom: 5rem;
+}
+
+.more1,
+.more2 {
+  display: none;
+}
+
+.sketch {
+  z-index: -1;
+  margin-top: -580px;
+}
+
+/* Article 2 */
+
+#article-2 {
+  margin-bottom: 500px; /* kaldır sonra */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: -300px;
+  grid-gap: 3em;
+}
+
+#article-2 .leftDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+#article-2 .rightDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+#article-2 .rightDiv .price {
+  font-size: 30px;
+}
+
+#article-2 .rightDiv a {
+  color: #2e2e37;
+  font-size: 18px;
+  text-align: left;
+}
+
+#article-2 h2 {
+  font-size: 24px;
+  font-weight: var(--fontRegular);
+  color: #6c6c6c;
+  text-align: justify;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#article-2 h1 {
+  font-size: 50px;
+  font-weight: var(--fontMedium);
+  color: #535353;
+  text-align: justify;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#article-2 p {
+  font-size: 20px;
+  font-weight: var(--fontRegular);
+  color: #6c6c6c;
+  text-align: start;
+  margin-bottom: 0;
+}
+
+.pdf-download {
+  height: 90px;
+  margin-top: 2rem;
+  background-color: #dddddd;
+  border: 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  font-size: 22px;
+  font-weight: var(--fontRegular);
+}
+
+.arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/4;
+ 
+}
+
+.arrow {
+  height: 85px;
+  width: 85px;
+  border-radius: 85px;
+  border: none;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+.arrow-left {
+  transform: rotate(180deg);
+  color: black;
+}
+
+.arrows .right {
+  background-color: var(--mainColor);
 }
