@@ -23,6 +23,10 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+button:hover {
+  filter: brightness(0.8);
+}
+
 /* Header */
 header {
   display: grid;
@@ -93,6 +97,9 @@ menu li {
   border: 1px solid #b5b5b5;
   margin-bottom: 1.5em;
   border-radius: 4px;
+}
+menu li:hover {
+  border: 2px solid var(--secondColor);
 }
 
 menu li:nth-child(1) {
@@ -261,6 +268,10 @@ main section {
   margin-bottom: 0;
 }
 
+#article-1 h2 {
+  margin-top: 5rem;
+}
+
 #article-1 h1 {
   font-size: 65px;
   font-weight: var(--fontRegular);
@@ -280,13 +291,14 @@ main section {
   width: 140px;
   background-color: white;
   padding: 0 1em;
-  margin: auto;
+  margin: 0 auto;
   cursor: pointer;
   margin-bottom: 5rem;
 }
 
 .more1,
-.more2 {
+.more2,
+.more3 {
   display: none;
 }
 
@@ -298,18 +310,14 @@ main section {
 /* Article 2 */
 
 #article-2 {
-  margin-bottom: 500px; /* kaldır sonra */
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: -300px;
   grid-gap: 3em;
+  margin-bottom: 10rem;
 }
 
-#article-2 .leftDiv {
-  display: flex;
-  flex-direction: column;
-}
-
+#article-2 .leftDiv,
 #article-2 .rightDiv {
   display: flex;
   flex-direction: column;
@@ -319,13 +327,19 @@ main section {
   font-size: 30px;
 }
 
+#article-2 .read-more-btn {
+  margin-left: 0;
+  margin-top: 1em;
+}
+
 #article-2 .rightDiv a {
   color: #2e2e37;
   font-size: 18px;
   text-align: left;
 }
 
-#article-2 h2 {
+#article-2 h2,
+#article-3 h2 {
   font-size: 24px;
   font-weight: var(--fontRegular);
   color: #6c6c6c;
@@ -334,7 +348,8 @@ main section {
   margin-top: 0;
 }
 
-#article-2 h1 {
+#article-2 h1,
+#article-3 h1 {
   font-size: 50px;
   font-weight: var(--fontMedium);
   color: #535353;
@@ -343,7 +358,8 @@ main section {
   margin-bottom: 0;
 }
 
-#article-2 p {
+#article-2 p,
+#article-3 p {
   font-size: 20px;
   font-weight: var(--fontRegular);
   color: #6c6c6c;
@@ -372,7 +388,6 @@ main section {
   justify-content: center;
   align-items: center;
   grid-column: 1/4;
- 
 }
 
 .arrow {
@@ -391,4 +406,82 @@ main section {
 
 .arrows .right {
   background-color: var(--mainColor);
+}
+
+#bg-sketch {
+  background-image: url("/public/images/sketch.jpg");
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  z-index: -1;
+}
+
+/* Article 3 */
+#article-3 {
+  background-image: url("/public/images/building.jpg");
+  width: 100%;
+  height: 1650px;
+  display: flex;
+  align-items: center;
+}
+
+#article-3 .container {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  grid-gap: 3em;
+  margin: 8rem 0;
+}
+
+#article-3 .leftDiv,
+#article-3 .rightDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#article-3 .rightDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+#article-3 .rightDiv .first-child {
+  background-color: var(--mainColor);
+}
+
+#article-3 .rightDiv .first-child * {
+  color: white;
+}
+
+#article-3 .rightDiv div {
+  width: 400px;
+  height: 215px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  background-color: white;
+}
+
+#article-3 .rightDiv div img {
+  margin-right: 1.5em;
+}
+
+#article-3 .rightDiv div h2 {
+  font-size: 26px;
+  font-weight: var(--fontRegular);
+}
+
+#article-3 .rightDiv div h1 {
+  font-size: 34px;
+  font-weight: var(--fontMedium);
+}
+
+#article-3 .read-more-btn {
+  margin: 0;
+  margin-top: 1em;
 }
