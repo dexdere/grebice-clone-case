@@ -51,7 +51,8 @@
     </div>
 
     <article>
-      <button id="phoneNo" class="phoneNo"><img src="../../../public/icons/phone-no.png" alt="phone icon">020 8558 9900</button>
+      <button id="phoneNo" class="phoneNo"><img src="../../../public/icons/phone-no.png" alt="phone icon">020 8558
+        9900</button>
       <div class="header-article">
         <div class="phoneNo-mobile mobile">
           <button class="phoneNo"><img src="../../../public/icons/phone-no.png" alt="phone icon">020 8558
@@ -316,11 +317,45 @@
           <p>If you would like Outlook to market your property simply click the PROCEED button below and we will contact
             you to make the necessary arrangements.
           </p>
-          <button class="proceed"><img src="../../../public/icons/checked.svg" alt=""> Proceed</button>
+          <button class="proceed" onclick="openModal()"><img src="../../../public/icons/checked.svg"
+              alt=""> Proceed</button>
+          <div class="modal">
+            <form action="#" method="post" data-lifesycle-form-id="uqZJLy5L06">
+              <h1>Contact Form</h1>
+
+              <label>Name</label><br>
+              <input type="text" name="pZ8o7keWgU" value="" required="required" placeholder=""><br>
+
+              <label>Surname</label><br>
+              <input type="text" name="8Tjk0jYSRD" value="" required="required" placeholder=""><br>
+
+              <label>Phone</label><br>
+              <input type="tel" name="qqpGSHVBQr" value="" required="required" placeholder=""><br>
+
+              <label>E-Mail</label><br>
+              <input type="email" name="spD0cSD5KM" value="" required="required" placeholder=""><br>
+
+              <label>Message</label><br>
+              <input type="text" name="26shIIIHr2" value="" placeholder=""><br>
+
+              <label>Please confirm that it is okay for us to contact you about this information as well as products and
+                services. (You will always be <br> given the right to unsubscribe at any point in the future)
+              </label>
+
+              <span>
+                <input type="checkbox" name="bLrNyBfEkX[]" value="fTkAFAUcD21647259131" required="required">
+                <label>Confirm</label>
+              </span>
+
+              <div class="modal-buttons">
+                <button onclick="closeModal()">Cancel</button>
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
         </div>
 
         <div>
-
           <p><b>Length Of Agreement:</b> 4 <br><br>
             <b>Plan Of Action:</b><br>
             Our fee is inclusive of TV
@@ -367,6 +402,9 @@
 
   <script src="../../functions/youtube.js"></script>
   <script src="../../functions/readMore.js"></script>
+  <script src="../../functions/modal.js"></script>
+  <script src="https://akya.io/js/form/app.min.js"></script>
+  <script src="../../functions/lifesycleForm.js"></script>
 </body>
 
 </html>
